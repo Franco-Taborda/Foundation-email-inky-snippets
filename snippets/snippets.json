@@ -28,7 +28,7 @@
     },
     "columns": {
         "prefix": "columns",
-        "body": "<columns ${2:small=\"\"} ${2:large=\"\"} ${3:valign=\"\"}>$0</columns>",
+        "body": "<columns ${1:small=\"\"} ${2:large=\"\"} ${3:valign=\"\"}>$0</columns>",
         "description": "small=\"num\" for mobile size of grid column (1 to 12)\nlarge=\"num\" for desktop size of grid column (1 to 12)\nvalign=\"top/middle/bottom\" for vertical alignment"
     },
     "center-columns": {
