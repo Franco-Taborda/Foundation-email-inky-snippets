@@ -1,0 +1,21 @@
+{
+    "name": "foundation-email-snippets",
+    "displayName": "Foundation-email-snippets",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "Xavier",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

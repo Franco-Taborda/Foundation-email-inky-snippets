@@ -1,0 +1,90 @@
+{
+    "center": {
+        "prefix": "center",
+        "body": "<center>$0</center>"
+    },
+    "center-image": {
+        "prefix": "center-image",
+        "body": [
+            "<center>",
+            "\t<img ${1:class=\"\"} src='$2' alt='$0'>",
+            "</center>"
+        ],
+        "description": "Centers an image horizontaly. If you need to center an image only on mobile clients, you can apply the .small-float-center class"
+    },
+    "button-foundation": {
+        "prefix": "button-foundation",
+        "body": "<button ${1:href\"\"} ${2:class=\"\"}>$0</button>",
+        "description": "sizing classes -> tiny, small, large\n'expanded' for full width of it's container\nsmall-expanded for expand on small only\nRadius -> radius, rounded\nAlso coloring classes can be used"
+    },
+    "center-button": {
+        "prefix": "center-button",
+        "body": [
+            "<center>",
+            "\t<button href='#'>$0</button>",
+            "</center>"
+        ],
+        "description": "Wrap the button with <center> tags to center it."
+    },
+    "columns": {
+        "prefix": "columns",
+        "body": "<columns ${2:small=\"\"} ${2:large=\"\"} ${3:valign=\"\"}>$0</columns>",
+        "description": "small=\"num\" for mobile size of grid column (1 to 12)\nlarge=\"num\" for desktop size of grid column (1 to 12)\nvalign=\"top/middle/bottom\" for vertical alignment"
+    },
+    "center-columns": {
+        "prefix": "center-columns",
+        "body": [
+            "<columns></columns>",
+            "<columns small='$0'></columns>",
+            "<columns></columns>"
+        ],
+        "description": "Centering columns can be done by adding empty columns to left and right of the column to be centered.\nIf you don't add a size attribute like small=\"x\" then the columns will be equal width."
+    },
+    "menu": {
+        "prefix": "menu",
+        "body": [
+            "<menu>",
+            "\t<item>$0</item>",
+            "</menu>"
+        ]
+    },
+    "item": {
+        "prefix": "item",
+        "body": "<item href='$0'></item>"
+    },
+    "center-menu": {
+        "prefix": "center-menu",
+        "body": [
+            "<menu>",
+            "\t<item ${1:href=\"\"}>$2</item>",
+            "</menu>"
+        ]
+    },
+    "container": {
+        "prefix": "container",
+        "body": "<container>$0</container>"
+    },
+    "row": {
+        "prefix": "row",
+        "body": [
+            "<row$1>",
+            "\t<columns>$0</columns>",
+            "</row>"
+        ],
+        "description": "Row with a column inside"
+    },
+    "callout": {
+        "prefix": "callout",
+        "body": "<callout ${1:class=\"\"}>$0</callout>",
+        "description": "A Callout adds a border, background, and some padding\nIt uses a full table structure, with the class .callout on the outer <table> (for bottom margin) and the .callout-inner applied to the innermost <th>"
+    },
+    "wrapper": {
+        "prefix": "wrapper",
+        "body": "<wrapper>$0</wrapper>"
+    },
+    "small": {
+        "prefix": "small",
+        "body": "<small>$0</small>",
+        "description": "By inserting a <small> element into a header Foundation will scale the header font size down for an inline element, allowing you to use this for subtitles or other secondary header text"
+    }
+}
