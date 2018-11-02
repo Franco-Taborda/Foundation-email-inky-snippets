@@ -7,21 +7,21 @@
         "prefix": "center-image",
         "body": [
             "<center>",
-            "\t<img ${1:class=\"\"} src='$2' alt='$0'>",
+            "\t<img ${1:class=\"\"} src=\"$2\" alt=\"$3\">$0",
             "</center>"
         ],
         "description": "Centers an image horizontaly. If you need to center an image only on mobile clients, you can apply the .small-float-center class"
     },
     "button-foundation": {
         "prefix": "button-foundation",
-        "body": "<button ${1:href\"\"} ${2:class=\"\"}>$0</button>",
+        "body": "<button ${1:href=\"\"} ${2:class=\"\"}>$0</button>",
         "description": "sizing classes -> tiny, small, large\n'expanded' for full width of it's container\nsmall-expanded for expand on small only\nRadius -> radius, rounded\nAlso coloring classes can be used"
     },
     "center-button": {
         "prefix": "center-button",
         "body": [
             "<center>",
-            "\t<button href='#'>$0</button>",
+            "\t<button ${1:href=\"#\"}>$0</button>",
             "</center>"
         ],
         "description": "Wrap the button with <center> tags to center it."
@@ -35,7 +35,7 @@
         "prefix": "center-columns",
         "body": [
             "<columns></columns>",
-            "<columns small='$0'></columns>",
+            "<columns ${1:small=\"\"} ${2:large=\"\"}>$0</columns>",
             "<columns></columns>"
         ],
         "description": "Centering columns can be done by adding empty columns to left and right of the column to be centered.\nIf you don't add a size attribute like small=\"x\" then the columns will be equal width."
@@ -44,19 +44,19 @@
         "prefix": "menu",
         "body": [
             "<menu>",
-            "\t<item>$0</item>",
+            "\t<item ${1:href=\"\"}>$0</item>",
             "</menu>"
         ]
     },
     "item": {
         "prefix": "item",
-        "body": "<item href='$0'></item>"
+        "body": "<item href=\"$0\"></item>"
     },
     "center-menu": {
         "prefix": "center-menu",
         "body": [
             "<menu>",
-            "\t<item ${1:href=\"\"}>$2</item>",
+            "\t<item href=\"$1\"}>$0</item>",
             "</menu>"
         ]
     },
@@ -67,7 +67,7 @@
     "row": {
         "prefix": "row",
         "body": [
-            "<row$1>",
+            "<row>",
             "\t<columns>$0</columns>",
             "</row>"
         ],
